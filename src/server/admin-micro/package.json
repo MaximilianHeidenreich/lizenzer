@@ -1,0 +1,33 @@
+{
+    "name": "lizenzer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "npx tsc -p .",
+        "createMicro": "deta new --runtime nodejs12 --name admin-api --project Lizenzer",
+        "deploy": "npm run build && deta deploy"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/cors": "^2.8.12",
+        "@types/express": "^4.17.13",
+        "@types/jsonwebtoken": "^8.5.8",
+        "@types/uuid": "^8.3.4",
+        "i": "^0.3.7",
+        "npm": "^8.4.1",
+        "typescript": "^4.5.5"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "deta": "^1.0.2",
+        "express": "^4.17.2",
+        "jsonwebtoken": "^8.5.1",
+        "uuid": "^8.3.2"
+    }
+}
